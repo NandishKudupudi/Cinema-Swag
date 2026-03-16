@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Cinema Swag™</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">CINEMA <em>SWAG</em><sup>™</sup></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+      <a href="cart.html" class="cart-btn">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <section class="section section-dark">
+    <div class="about-grid">
+      <div class="about-img">ADD BRAND PHOTO HERE</div>
+      <div class="about-text">
+        <p style="font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:1.25rem;font-family:'Barlow Condensed',sans-serif;">&#9670; Our Story</p>
+        <h1>BORN FROM<br>TOLLYWOOD.<br>BUILT FOR THE <span class="r">STREETS.</span></h1>
+        <p>Cinema Swag™ started with one simple idea — Telugu cinema is the most expressive, most dramatic, most iconic film industry in the world. And nobody was putting that energy on a tee.</p>
+        <p>We changed that. Every design is a tribute — to the scenes that gave us goosebumps, the moments that made us believe anything is possible, and the vibes that keep us coming back for more.</p>
+        <p>We are not just a clothing brand. We are a fandom wearing its heart on its chest — literally.</p>
+        <div class="values-grid">
+          <div class="value-card"><h4>100% Cotton</h4><p>Heavy 220GSM. Wears well, prints sharp, lasts long.</p></div>
+          <div class="value-card"><h4>Original Designs</h4><p>Every tee is designed in-house. No copied prints.</p></div>
+          <div class="value-card"><h4>Fast Delivery</h4><p>Shipped within 2 days. Pan India delivery.</p></div>
+          <div class="value-card"><h4>Fan First</h4><p>Built by fans, for fans. We get it. We live it.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-darker">
+    <div class="section-title" style="margin-bottom:2rem;">GET IN <span class="r">TOUCH</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;max-width:800px;">
+      <div style="background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--red);padding:1.5rem;">
+        <h4 style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:var(--red);margin-bottom:.5rem;">Email</h4>
+        <a href="mailto:support@cinemaswag.in" style="color:var(--muted);font-size:14px;text-decoration:none;">support@cinemaswag.in</a>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--red);padding:1.5rem;">
+        <h4 style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:var(--red);margin-bottom:.5rem;">Instagram</h4>
+        <a href="#" style="color:var(--muted);font-size:14px;text-decoration:none;">@cinemaswag.in</a>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--red);padding:1.5rem;">
+        <h4 style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:var(--red);margin-bottom:.5rem;">WhatsApp</h4>
+        <a href="#" style="color:var(--muted);font-size:14px;text-decoration:none;">+91 00000 00000</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">CINEMA <em>SWAG</em>™</a>
+        <div class="footer-tagline">"Wear the scene. Live the vibe."</div>
+        <p>Tollywood streetwear. Born in Telugu cinema, built for the streets of India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="shop.html?cat=graphic">Graphic Tees</a></li>
+          <li><a href="shop.html?cat=oversized">Oversized</a></li>
+          <li><a href="shop.html?cat=meme">Meme Tees</a></li>
+          <li><a href="shop.html?cat=limited">Limited Drops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:support@cinemaswag.in">Email Us</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Cinema Swag™ — All Rights Reserved</p>
+      <p>Made with mass in India 🇮🇳</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+  <script>function toggleMenu(){document.querySelector('.nav-links').classList.toggle('open');}</script>
+</body>
+</html>

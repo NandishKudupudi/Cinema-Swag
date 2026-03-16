@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop — Cinema Swag™</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">CINEMA <em>SWAG</em><sup>™</sup></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+      <a href="cart.html" class="cart-btn">Cart <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <div class="shop-header">
+    <h1>ALL <span class="r">TEES</span></h1>
+    <p>Graphic · Oversized · Meme Tees · Limited Drops</p>
+  </div>
+
+  <section class="section">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="graphic">Graphic Tees</button>
+      <button class="filter-btn" data-filter="oversized">Oversized</button>
+      <button class="filter-btn" data-filter="meme">Meme Tees</button>
+      <button class="filter-btn" data-filter="limited">Limited Drops</button>
+    </div>
+    <div class="product-grid" id="allProducts"></div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">CINEMA <em>SWAG</em>™</a>
+        <div class="footer-tagline">"Wear the scene. Live the vibe."</div>
+        <p>Tollywood streetwear. Born in Telugu cinema, built for the streets of India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="shop.html?cat=graphic">Graphic Tees</a></li>
+          <li><a href="shop.html?cat=oversized">Oversized</a></li>
+          <li><a href="shop.html?cat=meme">Meme Tees</a></li>
+          <li><a href="shop.html?cat=limited">Limited Drops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@cinemaswag.in">support@cinemaswag.in</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Cinema Swag™ — All Rights Reserved</p>
+      <p>Made with mass in India 🇮🇳</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+  <script>function toggleMenu(){document.querySelector('.nav-links').classList.toggle('open');}</script>
+</body>
+</html>
